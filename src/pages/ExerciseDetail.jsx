@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import { exerciseOptions, fetchData, youtubeOptions } from "../utils/fetchData";
 import Detail from "../components/Detail";
@@ -53,7 +53,17 @@ const ExerciseDetail = () => {
   if (!exerciseDetail) return <div>No Data</div>;
 
   return (
-    <Box sx={{ mt: { lg: "96px", xs: "60px" } }}>
+    <Box sx={{ mt: { lg: "26px", xs: "10px" } }} p="20px">
+      <Typography
+        variant
+        sx={{
+          fontSize: { lg: "44px", xs: "25px" },
+        }}
+        fontWeight={700}
+        color="#191919"
+      >
+        Detail exercises
+      </Typography>
       <Detail exerciseDetail={exerciseDetail} />
       <ExerciseVideos
         exerciseVideos={exerciseVideos}

@@ -26,11 +26,19 @@ const Detail = ({ exerciseDetail }) => {
   return (
     <Stack
       gap="60px"
-      sx={{ flexDirection: { lg: "row" }, p: "20px", alignItems: "center" }}
+      sx={{
+        flexDirection: { lg: "row" },
+        alignItems: "center",
+        backgroundColor: "#f2edee",
+        borderRadius: "15px",
+        padding: "20px",
+        boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+      }}
     >
       <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
       <Stack sx={{ gap: { lg: "35px", xs: "20px" } }}>
         <Typography
+          variant
           sx={{ fontSize: { lg: "64px", xs: "30px" } }}
           fontWeight={700}
           textTransform="capitalize"
@@ -38,6 +46,7 @@ const Detail = ({ exerciseDetail }) => {
           {name}
         </Typography>
         <Typography
+          variant
           sx={{ fontSize: { lg: "24px", xs: "18px" } }}
           color="#4F4C4C"
         >
@@ -63,6 +72,7 @@ const Detail = ({ exerciseDetail }) => {
               />
             </Button>
             <Typography
+              variant
               textTransform="capitalize"
               sx={{ fontSize: { lg: "30px", xs: "20px" } }}
             >

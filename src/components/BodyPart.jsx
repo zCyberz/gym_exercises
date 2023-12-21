@@ -12,10 +12,12 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
       sx={{
         borderTop: bodyPart === item ? "4px solid #ff2625" : "",
         backgroundColor: "#fff",
-        borderBottomLeftRadius: "20px",
+        borderRadius: "20px",
         width: " 270px",
         height: "280px",
         cursor: "pointer",
+        boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+        margin: "25px",
         gap: "47px,",
       }}
       onClick={() => {
@@ -29,6 +31,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
         style={{ width: "40px", height: "40px" }}
       />
       <Typography
+        variant
         fontSize="24px"
         fontWeight="bold"
         color="3A1212"

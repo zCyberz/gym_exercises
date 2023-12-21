@@ -32,6 +32,7 @@ const ExerciseCard = ({ exercise }) => (
       </Button>
     </Stack>
     <Typography
+      variant
       ml="21px"
       color="#000"
       fontWeight="bold"

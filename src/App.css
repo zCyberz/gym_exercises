@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 body {
-  font-family: "Josefin Sans";
+  font-family: "Nunito";
   background-color: #fffafb;
 }
 
@@ -26,10 +27,10 @@ body {
   font-size: 25px;
   border-radius: 4px;
   position: absolute;
-  bottom: -20px;
+  bottom: -60px;
   right: 80px;
   transform: scale(1, 1);
-  transition: 0.3s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .right-arrow {
@@ -50,6 +51,7 @@ body {
 .detail-image {
   width: 729px;
   height: 742px;
+  border-radius: 20px;
 }
 
 .hero-banner-img {
@@ -62,32 +64,34 @@ body {
 }
 
 .exercise-card {
-  width: 400px;
-  height: 445px;
+  width: 320px;
+  height: 450px;
   background: #fff;
-  border-top: 4px solid #ff2625;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding-bottom: 10px;
+  margin-block: 30px;
   transform: scale(1, 1);
-  transition: 0.3s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .exercise-card img {
   height: 326px;
+  border-radius: 20px;
 }
 
 .bodyPart-card {
   transform: scale(1, 1);
-  transition: 0.3s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .exercise-card:hover,
 .bodyPart-card:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.05, 1.05);
 }
 
 .search-btn:hover {
@@ -99,9 +103,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 387px;
+  width: 377px;
   height: 381px;
   text-decoration: none;
+}
+
+.exercise-video:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.2s all ease-in-out;
 }
 
 @media screen and (max-width: 1200px) {

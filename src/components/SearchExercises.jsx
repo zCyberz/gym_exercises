@@ -47,6 +47,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   return (
     <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
       <Typography
+        variant
         fontWeight={700}
         sx={{ fontSize: { lg: "44px", xs: "30px" } }}
         mb="49px"
@@ -54,15 +55,28 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       >
         Awesome Exercises You <br /> Should Know
       </Typography>
-      <Box position="relative" mb="72px">
+      <Box position="relative" height="76px" mb="72px">
         <TextField
-          height="76px"
           sx={{
-            input: { fontWeight: "700", border: "none", borderRadius: "4px" },
+            "& .MuiOutlinedInput-root": {
+              borderRadius: "15px",
+              "&:hover fieldset": {
+                borderWidth: 1,
+                borderColor: "#eaeaea",
+                borderRadius: "15px",
+              },
+              "&.Mui-focused fieldset": {
+                borderWidth: 1,
+                borderColor: "#eaeaea",
+                borderRadius: "15px",
+              },
+            },
+            borderWidth: 0,
             width: { lg: "1170px", xs: "350px" },
+            height: "56px",
             backgroundColor: "#fff",
-            borderRadius: "40px",
           }}
+          variant="outlined"
           value={search}
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
           placeholder="Search Exercises"
@@ -78,6 +92,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
             height: "56px",
             position: "absolute",
             right: "0px",
+            borderRadius: "15px",
             fontSize: { lg: "20px", xs: "14px" },
           }}
           onClick={handleSearch}

@@ -41,12 +41,20 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
   return (
     <Box id="exercises" sx={{ mt: { lg: "110px" } }} mt="50px" p="20px">
-      <Typography variant="h3" mb="46px">
+      <Typography variant sx={{ fontSize: "35px", color: "#424242" }} mb="46px">
         Showing Results
       </Typography>
+      <Box sx={{ marginBottom: "20px" }} />
       <Stack
         direction="row"
-        sx={{ gap: { lg: "110px", xs: "50px" } }}
+        sx={{
+          gap: { lg: "110px", xs: "50px" },
+          backgroundColor: "#f2edee",
+          borderRadius: "15px",
+          paddingInline: "20px",
+          paddingBlock: "50px",
+          boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+        }}
         flexWrap="wrap"
         justifyContent="center"
       >
